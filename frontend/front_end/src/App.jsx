@@ -21,7 +21,7 @@ function App() {
     if (!source || !destination) return;
     const i = setInterval(findRoute, 5000);
     return () => clearInterval(i);
-  }, [source, destination]);ß
+  }, [source, destination]);
 
   const trafficColor =
     routeData?.traffic === "HIGH"
